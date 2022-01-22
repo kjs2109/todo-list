@@ -26,8 +26,8 @@ function paintTodo(todoObj) {
     button.innerText = 'X';
 
     todoUl.appendChild(li);
-    li.appendChild(span);
     li.appendChild(button);
+    li.appendChild(span);
 
     li.classList.add(todoObj['id']);
 

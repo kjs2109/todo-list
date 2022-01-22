@@ -1,3 +1,139 @@
-.hidden {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;1,300&family=Nanum+Pen+Script&display=swap");
+
+* {
+  border: none;
+  outline: none;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Nanum Pen Script", cursive;
+}
+body {
+  background-color: #ff9eaa;
+  display: flex;
+  justify-content: center;
+}
+.hidden > * {
   display: none;
+}
+.card {
+  /*  #ffeee7 */
+  background-color: #fffff4;
+  margin-top: 50px;
+  max-width: 800px;
+  width: 80%;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner {
+  padding: 1px;
+  width: 100%;
+}
+
+.clock {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.input-form {
+  padding: 20px;
+}
+.input_user-name {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 3px;
+}
+.input_button {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 3px;
+}
+.greeting {
+  color: whitesmoke;
+  font-size: 3rem;
+  margin-top: 0;
+  transition: transform 0.5s linear;
+}
+.greeting:hover {
+  transform: scale(1.2);
+  color: black;
+}
+.quote {
+  background-color: #fff3e0;
+  width: 90%;
+  margin: 0;
+  margin-top: 10px;
+  border-radius: 1rem;
+  transition: transform 0.8s ease-in-out;
+}
+.quote:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 3px 20px rgba(255, 255, 0, 0.473);
+}
+.english-quote {
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 13px;
+}
+.korean-quote {
+  font-size: 1.3rem;
+  margin: 15px;
+}
+.todo-list-section {
+  margin: 10px;
+  background-color: #fff3e0;
+  width: 90%;
+  border-radius: 1rem;
+  margin-bottom: 25px;
+}
+.todo-input {
+  font-size: 1rem;
+  padding: 10px;
+  width: 160px;
+  border-bottom: solid 1.3px pink;
+  color: #ed407a;
+  /* background-color: pink; */
+}
+.todo-input::placeholder {
+  color: #ed407a;
+}
+.today-todo {
+  margin-bottom: 5px;
+  color: #c2185b;
+}
+.todo-ul {
+  margin: 15px 30px 30px 30px;
+  width: 60%;
+  padding: 0px;
+}
+.todo-ul > li {
+  display: flex;
+  justify-content: flex-start;
+  padding: 7px;
+}
+.todo-ul > li > button {
+  background: #c2185b;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  translate: transform 0.7s ease-in-out;
+  /* border-radius: ; */
+}
+.todo-ul > li > button:hover {
+  transform: scale(1.1);
+}
+.todo-ul > li > span {
+  margin-left: 10px;
+  font-size: 1.3rem;
+  color: #ed407a;
 }

@@ -1,6 +1,7 @@
 const inputForm = document.querySelector('.input-form');
 const inputUserName = document.querySelector('.input_user-name');
 const greeting = document.querySelector('.greeting');
+const content = document.querySelector('.content');
 
 //submit 이벤트가 발생했을 때
 // default 이벤트를 막아주고
@@ -25,6 +26,7 @@ function paintGreeting(name) {
     
     }else {
         greeting.classList.remove('hidden');
+        content.classList.remove('hidden');
         inputForm.classList.add('hidden');
         greeting.innerText = `Hello ${name}!!`;
     }
